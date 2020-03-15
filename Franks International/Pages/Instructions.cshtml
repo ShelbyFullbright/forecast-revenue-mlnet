@@ -1,0 +1,36 @@
+﻿@page
+@model PrivacyModel
+@{
+    ViewData["Title"] = "Instructions";
+}
+<h1>@ViewData["Title"]</h1>
+
+<h3>Requisite University Disclaimer</h3>
+<p>
+    This project has been developed as part of a classroom learning experience by students at Utah State University.  While efforts are made to ensure copyrights and intellectual property rights have not been violated, it is the responsibility of the organization using any classroom projects created by USU and its students to make sure the materials contained therein do not infringe the property rights (including without limitation rights of privacy and publicity, trademark rights, copyrights, patents, trade secrets, and licenses) of third parties.
+</p>
+<h3>Procedural Instruction</h3>
+<p>
+    <b>Intro:</b> There are three primary factors to bear in mind while testing this system-<br />
+    1. The model is not designed to make predictions more than approximately 18 months from the end of the training data (July 2018), nor would it be prudent to do so. Consequently, only 2019 and 2020 are available as prediction options.<br />
+    2. The revenue forecasts made prior to this system often erred in excess of one-hundred thousand dollars in a month. Consequently, it is worth noting that the prediction engine is returning a 98% R-Squared value and we believe our furthest outlier is within an acceptable margin of error.<br />
+    3. The application's list buttons have been set to default values (rather than "enter variable" messages) to avert unnecessary error handling code & dialog boxes.<br />
+    <b>Procedures:</b><br />
+    <b>[Test A]</b><br />
+    1. Press "Forecast" button. (Did a January 2020 prediction appear? $262613.70)<br />
+    2. Press "Render Graph". (Did a graph of historical data appear next to the prediction output?)<br />
+    3. Hover cursor over graph points. (Did the exact figure of previous revenue appear for comparison?)<br />
+    <b>[Test B]</b><br />
+    1. Change duration to "6 months" & press "Forecast". (Did the application make 6 predictions?)<br />
+    2. Repeat step 1. (Did the application make the same 6 predictions to ensure consistency?)<br />
+    3. Press "Render Graph". (Did 2020 predictions seem reasonable against the historical data?)<br />
+    4. Change the year to "2019" & press "Forecast". (Did the application return 6 entirely new predictions?)<br />
+    5. Press "Render Graph". (Did 2019 predictions seem reasonable against the historical data?)<br />
+    <b>[Test C]</b><br />
+    1. Change month to "September", year to "2019", duration to "12 months", and press "Forecast".<br />
+    (a. Did the application return 12 predictions?)<br />
+    (b. Did the predictions seem reasonable against the historical data?)<br />
+    Bonus!  (c. Did the predictions list appropriately from Sept. 2019 to Aug. 2020?)<br />
+    <b>[Test D]</b><br />
+    1. Press "X" in upper right hand corner to exit. (Did application close out just like an internet tab?)<br />
+</p>
